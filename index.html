@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style/style.css" />
+    <title>Sistema Bancário</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Sistema Bancário</h1>
+
+      <!-- Formulário para criar conta -->
+      <div class="form">
+        <input type="text" id="nome" placeholder="Nome do Cliente" />
+        <input type="number" id="saldoInicial" placeholder="Saldo Inicial" />
+        <button id="criarConta">Criar Conta</button>
+      </div>
+
+      <!-- Área de informações da conta -->
+      <div class="conta">
+        <h2>Informações da Conta</h2>
+        <p><strong>Nome:</strong> <span id="nomeConta">---</span></p>
+        <p><strong>Saldo:</strong> R$ <span id="saldoConta">0.00</span></p>
+      </div>
+
+      <!-- Área de Transações -->
+      <div class="transacoes">
+        <h2>Operações</h2>
+        <input type="number" id="valor" placeholder="Valor da operação" />
+        <button id="depositar">Depositar</button>
+        <button id="sacar">Sacar</button>
+      </div>
+
+      <!-- Extrato -->
+      <div class="extrato">
+        <h2>Extrato</h2>
+        <ul id="historico"></ul>
+      </div>
+    </div>
+    <script src="src/script/script.js"></script>
+  </body>
+</html>
